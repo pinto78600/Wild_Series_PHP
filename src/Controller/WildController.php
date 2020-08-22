@@ -18,7 +18,7 @@ class WildController extends AbstractController
         ]);
     }
     /**
-     * @Route("/wild/show/{slug?Aucune série sélectionnée, veuillez choisir une série}", name="wild_show")
+     * @Route("/wild/show/{slug<^[a-z0-9-]+$>?Aucune série sélectionnée, veuillez choisir une série}", name="wild_show")
      */
     public function show($slug): Response
     {
